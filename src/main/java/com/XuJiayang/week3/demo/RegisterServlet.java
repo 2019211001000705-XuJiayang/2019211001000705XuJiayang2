@@ -34,9 +34,10 @@ public class RegisterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String ID=request.getParameter("ID");
+        String ID=request.getParameter("id");
         String Username=request.getParameter("Username");
         String password=request.getParameter("password");
         String Email=request.getParameter("Email");
@@ -52,7 +53,6 @@ public class RegisterServlet extends HttpServlet {
         writer.println("<br>Date :"+Date);
         writer.close();
         writer.close();*/
-
         String sql1="insert into Usertable values(?,?,?,?,?,?)";
         PreparedStatement pstmt= null;
         try {
@@ -106,3 +106,4 @@ public class RegisterServlet extends HttpServlet {
         }
     }
 }
+
