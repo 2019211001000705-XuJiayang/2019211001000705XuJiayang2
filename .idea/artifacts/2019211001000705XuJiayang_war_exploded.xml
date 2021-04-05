@@ -1,3 +1,4 @@
+
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="2019211001000705XuJiayang:war exploded">
     <output-path>$PROJECT_DIR$/target/XuJiayang2019211001000705-1.0-SNAPSHOT</output-path>
@@ -12,6 +13,9 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="2019211001000705XuJiayang" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre8" />
         </element>
       </element>
       <element id="directory" name="META-INF">

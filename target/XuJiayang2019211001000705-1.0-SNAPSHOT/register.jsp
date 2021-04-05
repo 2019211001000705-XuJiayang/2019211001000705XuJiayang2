@@ -1,21 +1,27 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%--
+  Created by IntelliJ IDEA.
+  User: 11797
+  Date: 2021/3/13
+  Time: 20:34
+  To change this template use File | Settings | File Templates.
+--%>
+<%@include file="/header.jsp"%>
+This is my JSP page.<br>
 <h1>New User Registration</h1>
-<form method="post" action="Register">
+<form method="post" action="/2019211001000705XuJiayang_war_exploded/Register">
     <table>
-        ID：<input type="text" name="ID" required><br/>
-        Username：<input type="text" name="Username" required><br/>
-        password：<input type="password" name="password" required minlength="8"><br/>
-        Email：<input type="email" name="Email" required><br/>
-        Gender：<input type="radio" name="Gender" value="Male"/> Male <input type="radio" name="Gender" value="Female"/> Female
-        </td>
+        <tr> <td>Username:</td> <td><input type="text" name="Username" required><br/></td></tr>
+        <tr> <td>password:</td> <td><input type="password" name="password" required minlength="8"><br/></td></tr>
+        <tr> <td>Email:</td> <td><input type="email" name="Email" required><br/></td></tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="Gender" value="Male" checked="checked"/> Male <!-- checked="checked"默认选择项 -->
+                <input type="radio" name="Gender" value="Female"/> Female
+            </td>
         </tr>
-        Date of Birth：<input type="date" name="Date" required dataformatas="yyyy-dd-mm"><br/>
-        <input type="submit" value="Register"/>
+        <tr> <td>Date of Birth:</td> <td><input type="date" name="Date" required dataformatas="yyyy-dd-mm"><br/></td></tr>
+        <tr> <td></td><td><input type="submit" value="Register"/></td>  </tr>
     </table>
 </form>
-</body>
+<%@include file="/footer.jsp"%>
